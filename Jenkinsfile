@@ -3,6 +3,9 @@ pipeline {
     hostname = "localhost"
   }
   agent any
+  tools {
+    nodejs 'nodejs'
+  }
   stages {
     stage('Serve application') {
       steps {
